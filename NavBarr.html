@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="Css/fonts.css">
+		<link rel="stylesheet" href="Css/texts.css">
     <title>NavBarr</title>
 
     <style>
 
         #NavBar {
+
             box-sizing:border-box;
             margin:0px; padding:0px;
 
@@ -18,6 +24,8 @@
             width: 100vw; height: 100px;
             background-color: rgb(44, 25, 25);
             position:relative;
+            position: sticky;
+            top: 0;
         }
 
         .cajaDado{   
@@ -27,6 +35,7 @@
             position:relative;
             box-sizing:border-box;
             float:left;
+            align-content: center;
         }
         .caja1{   
             margin:0px; padding:0px; 
@@ -35,6 +44,7 @@
             position:relative;
             box-sizing:border-box;
             float:right;
+            align-content: center;
         }
         .caja2{   
             margin:0px; padding:0px; 
@@ -44,27 +54,114 @@
             box-sizing:border-box;
             float:right;
         }
+        .cajaTexto{
+            margin:0px; padding:0px; 
+            border: rgb(0, 0, 0), dashed, 1px;
+            width: 25%;height: 80px; 
+            position:relative;
+            box-sizing:border-box;
+            float:left;
+            align-content: center;
+            
+        }
+        .cajaImagen{
+            margin:0px; padding:0px; 
+            padding-left: 5%;
+            border: rgb(0, 0, 0), dashed, 1px;
+            width: 25%;height: 80px; 
+            position:relative;
+            box-sizing:border-box;
+            float:left;
+            align-content: center;
+            
+        }
+
+        a{font-size: 20px; color: bisque; font-family: "Inknut Antiqua";}
 
         
     </style>
 </head>
 
 <body>
-    <div id="NavBar">
+    <div id="NavBar" >
+
         <div class="cajaDado">
-            
+            <img src="Images/Dado.png" alt = "Dado Interactuable" style="width: 30%; padding-left: 20%;">
 
         </div>
         <div class="caja1">
+            <div class="cajaImagen">
+                <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="29.5" cy="29.5" r="26.5" fill="#A62A1E" stroke="#D26E16" stroke-width="6"/>
+                    <g clip-path="url(#clip0_2013_942)">
+                    <path d="M42.7669 22.8074C42.6198 22.2198 42.3203 21.6814 41.8985 21.2466C41.4768 20.8118 40.9477 20.496 40.3648 20.3311C38.2352 19.811 29.7165 19.811 29.7165 19.811C29.7165 19.811 21.1977 19.811 19.0681 20.3806C18.4852 20.5455 17.9561 20.8613 17.5344 21.2961C17.1126 21.7309 16.8131 22.2693 16.666 22.857C16.2762 25.0183 16.0856 27.2108 16.0964 29.407C16.0825 31.6197 16.2732 33.8289 16.666 36.0065C16.8281 36.5759 17.1344 37.0938 17.5552 37.5103C17.976 37.9267 18.497 38.2276 19.0681 38.3838C21.1977 38.9534 29.7165 38.9534 29.7165 38.9534C29.7165 38.9534 38.2352 38.9534 40.3648 38.3838C40.9477 38.2189 41.4768 37.9031 41.8985 37.4683C42.3203 37.0335 42.6198 36.4951 42.7669 35.9074C43.1537 33.7624 43.3443 31.5866 43.3365 29.407C43.3504 27.1943 43.1597 24.985 42.7669 22.8074Z" stroke="#EDCBAF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.9305 33.4558L34.0501 29.407L26.9305 25.3581V33.4558Z" stroke="#EDCBAF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_2013_942">
+                    <rect width="29.7164" height="29.7164" fill="white" transform="translate(14.8584 14.8584)"/>
+                    </clipPath>
+                    </defs>
+                </svg> 
+            </div>
+
+            <div class="cajaImagen">
+                <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="29.5" cy="29.5" r="26.5" fill="#A62A1E" stroke="#D26E16" stroke-width="6"/>
+                    <path d="M36.0937 22.9068H36.1061M23.0928 17.335H35.4746C38.8938 17.335 41.6656 20.1067 41.6656 23.5259V35.9077C41.6656 39.3269 38.8938 42.0987 35.4746 42.0987H23.0928C19.6736 42.0987 16.9019 39.3269 16.9019 35.9077V23.5259C16.9019 20.1067 19.6736 17.335 23.0928 17.335ZM34.2365 28.9368C34.3893 29.9672 34.2132 31.0197 33.7335 31.9443C33.2537 32.869 32.4945 33.6188 31.564 34.0872C30.6335 34.5556 29.579 34.7186 28.5504 34.5531C27.5219 34.3876 26.5718 33.902 25.8352 33.1654C25.0985 32.4287 24.6129 31.4786 24.4474 30.4501C24.2819 29.4216 24.445 28.3671 24.9133 27.4365C25.3817 26.506 26.1315 25.7469 27.0562 25.2671C27.9809 24.7873 29.0333 24.6113 30.0638 24.7641C31.1149 24.9199 32.088 25.4097 32.8394 26.1611C33.5908 26.9125 34.0806 27.8856 34.2365 28.9368Z" stroke="#EDCBAF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+			    </svg>
+            </div>
+            <div class="cajaImagen" style = " width: 50%">
+
+            </div>
+
             
 
         </div>
         <div class="caja2">
-            
+            <div class="cajaTexto">
+                <a href="#Home" style="font-weight: bold;text-decoration: none; padding-left: 25%"> 
+                     Home
+                </a>
+
+            </div>
+            <div class="cajaTexto">
+                <a href="#Pjs" style="font-weight: bold;text-decoration: none;padding-left: 15% "> 
+                     Personajes
+                </a>
+
+            </div>
+            <div class="cajaTexto">
+                <a href="#Ambientacion" style="font-weight: bold;text-decoration: none;padding-left: 5%"> 
+                     Ambientacion
+                </a>
+
+            </div>
+            <div class="cajaTexto">
+                <a href="#Monstruos" style="font-weight: bold;text-decoration: none; padding-left: 15%; "> 
+                     Monstruos
+                </a>
+
+            </div>
 
         </div>
 
     </div>
-    
+    <br> 
+    <h1 id="Home">
+        HOME
+    </h1>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <h1 id="Pjs">
+        Personajes
+    </h1>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <h1 id="Ambientacion">
+        Ambientacion
+    </h1>
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <h1 id="Monstruos">
+        Monstruos
+    </h1>
 </body>
 </html>
