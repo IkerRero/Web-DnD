@@ -39,3 +39,9 @@
   font-weight: 900;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "JejuGothic";
+  src: url(../fonts/JejuGothic.ttf.woff) format(woff);
+}
+

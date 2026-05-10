@@ -3,23 +3,18 @@
   box-sizing: border-box;
   border-radius: 999px; 
   background-color: #A62A1E;
-  border: 0.2em solid #D26E16;
-  outline-offset: 0.2em;
+  border: 0.3em solid #D26E16;
+  outline-offset: 0.3em;
   padding: 0px;
   padding-left: 12px;
   padding-right: 12px;
   text-align: center;
-  color: #EDCBAF;;
-
-}
-
-
-.button_contact{
-    height: 60px;
-  line-height: 44px;
+  color: #EDCBAF;
+  font-family: "Inknut Antiqua", serif;
 
 }
 
 .button:hover{
-
+background-color: #40130E;
+color: #A62A1E;
 }

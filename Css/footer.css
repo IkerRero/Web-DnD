@@ -1,0 +1,51 @@
+						
+			footer{
+				background-color: #0E262A;
+				border-top: 6px solid #D26E16;
+                padding: 48px 24px;
+			}
+
+            .footer-top{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-top > div{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+
+            .footer-top > div > div{
+                display: flex;
+                gap: 8px;
+            }
+
+            .footer-links{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+            }
+
+            .footer-links > div{
+                display: flex;
+                align-items: center;
+                gap: 80px;
+            }
+
+            .footer-links  .subtitle{
+                color: #EDCBAF;
+				font-size: 20px;
+				font-family: "Inknut Antiqua", serif;
+                margin-bottom: 0;
+            }
+
+            .footer-links  .link{
+                color: #A62A1E;
+                text-decoration: underline;
+                font-size: large;
+            }
+
+            
