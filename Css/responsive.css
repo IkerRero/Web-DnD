@@ -1,6 +1,8 @@
-@media only screen and (max-width: 1000px ) {
+
+@media only screen and (max-width: 1140px ) {
     a{font-size: 15px;}
-    svg{scale: 0.75;}
+    .cajaImagen{display: none; width: 0;}
+    #contact{width: 100%; padding-left: 10%;}
 }
 
 @media only screen and (min-width: 769px) {
@@ -8,24 +10,35 @@
     .cajaTexto {
         width: 25%;height: 80px; 
     }
-       @media only screen and (min-width: 1001px ) {
-    a{font-size: 20px;}
-     svg{scale: 1;}
+       @media only screen and (min-width: 1141px ) {
+        a{font-size: 20px;}
+        svg{scale: 1;}
+        #contact{width: 60%;padding-left: 2.5%;}
+        .caja1{ width: 20%;height: 100px;}
+        .caja2{ width: 60%;height: 100px;}
     } 
         
-
 }
 
-@media only screen and (max-width: 768px )  {
+@media only screen and (max-width: 768px )and (min-width: 375px )  {
     /* For Tablet: */
    .cajaTexto {
         width: 50%;height: 40px; 
     }
+    .caja1{ width: 20%;height: 100px;}
+    .caja2{ width: 60%;height: 100px;}
 }
-/*
+
 @media only screen and (max-width: 375px) {
-    /* For Mobile phones: 
-    [class="cajaTexto"] {
-        width: 0%;
+    /* For Mobile phones: */
+   .cajaTexto {
+        display: none; 
     }
-}*/
+    #NavBar{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .caja1{ width: 30%;height: 100px;}
+    .caja2{ width: 30%;height: 100px;}
+}
