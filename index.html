@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Discover DnD!</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="Css/texts.css">
 		<link rel="stylesheet" href="Css/buttons.css">
 		<link rel="stylesheet" href="Css/footer.css">
-
+		<link rel="stylesheet" href="Css/navbar.css">
 		<style>
 
 			.center{
@@ -29,8 +29,33 @@
 	</head>
 	<body>
 		<header>
-			
+			<nav>
+				<div class="nav-container">
+					<a href="">Misitio</a>
+
+<button class="menu-btn" id="menuBtn">☰</button>					
+					<ul class="nav-links" id="navLinks">
+						<li>
+							<a href="#inicio">Home</a>
+						</li>
+						<li>
+							<a href="#inicio">Classes</a>
+						</li>
+						<li>
+							<a href="#inicio">Map</a>
+						</li>
+						<li>
+							<a href="#inicio">Races</a>
+						</li>
+						<li>
+							<a href="#inicio">Monsters</a>
+						</li>
+					</ul>
+				</div>
+
+			</nav>
 		</header>
+		
 		<main>
 			<h1 class="button">Welcome Adventurer</h1>
 		</main>
@@ -75,5 +100,6 @@
 			</div>
 			
 		</footer>
+		<script src="ScriptNavBar.js"></script>
 	</body>
 </html>
