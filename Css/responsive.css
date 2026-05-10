@@ -3,6 +3,9 @@
     a{font-size: 15px;}
     .cajaImagen{display: none; width: 0;}
     #contact{width: 100%; padding-left: 10%;}
+        .caja1{ width: 30%;height: 100px;}
+        .caja2{ width: 60%;height: 100px;}
+        .cajaDado{width: 15%;height: 100px; }
 }
 
 @media only screen and (min-width: 769px) {
@@ -14,8 +17,9 @@
         a{font-size: 20px;}
         svg{scale: 1;}
         #contact{width: 60%;padding-left: 2.5%;}
-        .caja1{ width: 20%;height: 100px;}
+        .caja1{ width: 30%;height: 100px;}
         .caja2{ width: 60%;height: 100px;}
+        .cajaDado{width: 15%;height: 100px; }
     } 
         
 }
@@ -25,8 +29,9 @@
    .cajaTexto {
         width: 50%;height: 40px; 
     }
-    .caja1{ width: 20%;height: 100px;}
+    .caja1{ width: 30%;height: 100px;}
     .caja2{ width: 60%;height: 100px;}
+    .cajaDado{width: 30%;height: 100px; }
 }
 
 @media only screen and (max-width: 375px) {
@@ -39,6 +44,7 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    .caja1{ width: 30%;height: 100px;}
+    .caja1{ display: none;}
     .caja2{ width: 30%;height: 100px;}
+    .cajaDado{width: 30%;height: 100px; }
 }

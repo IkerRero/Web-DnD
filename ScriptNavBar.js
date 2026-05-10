@@ -14,3 +14,8 @@ menuBtn.addEventListener("click", () => {
     }
 
 });
+
+function TirarDado()
+{
+    
+}
