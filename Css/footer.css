@@ -1,21 +1,34 @@
 						
+						
 			footer{
 				background-color: #0E262A;
-				border-top: 6px solid #D26E16;
-                padding: 48px 24px;
+                border-top: 6px solid #D26E16;
+                box-sizing: border-box;
+                padding-bottom: 20px;
 			}
 
             .footer-top{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                gap: 0;
             }
+
 
             .footer-top > div{
                 display: flex;
                 align-items: center;
+                flex-direction: row;
                 gap: 16px;
             }
+
+            .footer-top-icons {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+
+            
 
             .footer-top > div > div{
                 display: flex;
@@ -24,22 +37,41 @@
 
             .footer-links{
                 display: flex;
-                flex-direction: column;
                 align-items: center;
-                gap: 0;
+                justify-content: center;
+                gap: 80px;
+                max-width: 100%;
+                overflow-x: hidden;
+                flex-wrap: wrap;
             }
 
             .footer-links > div{
                 display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .footer-links > div > div {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .footer-top a {
+                display: flex;
                 align-items: center;
-                gap: 80px;
+                justify-content: center;
+                padding: 0;
+                line-height: 0;
+                text-decoration: none;
             }
 
             .footer-links  .subtitle{
                 
 				font-size: 20px;
 				font-family: "Inknut Antiqua", serif;
-                margin-bottom: 0;
+                margin: 0;
             }
 
             .footer-links  .link{
@@ -48,4 +80,10 @@
                 font-size: large;
             }
 
-            
+            @media (max-width: 600px) {
+    .footer-links{
+        flex-direction: column;
+        gap: 5px; 
+        align-items: center;
+    }
+}
