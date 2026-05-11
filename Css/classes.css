@@ -11,8 +11,8 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-}
 
+}
 
 
 .class-row{
@@ -33,6 +33,9 @@
     width: 100%;
     height: 50%;
     padding: 15px;
+}
+#classText {
+    white-space: pre-line;
 }
 
 .class-selector{
