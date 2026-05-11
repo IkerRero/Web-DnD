@@ -15,7 +15,7 @@ margin: 30px;
 #mapaInteractivo {
     width: 100%;
     height: 100%;
-    border: none;
+    border: solid 5px #D26E16;
     border-radius: 15px;
     overscroll-behavior: contain;
 }

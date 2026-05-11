@@ -1,0 +1,6 @@
+
+Rogues are the quintessential scoundrel character: cunning, capable, and effective in a variety of situations. Sneak Attack allows them to do a huge pile of damage in a single attack, and their pile of skills allows them to easily handle locks, traps, guards, and many other challenges. While a party can function just fine without a Rogue, it’s hard to compete with the sheer number of important skill and tool proficiencies offered by the Rogue. In a party they serve as some combination of Face, Scout, and Striker.
+
+Rogues typically split into melee or ranged builds, though the universal efficacy of Dexterity makes it easy for many rogues to switch between the two. Melee Rogues frequently go for two-weapon fighting because it provides a second chance to score Sneak Attack, and hit-and-run tactics enabled by Cunning Action are great way to get into melee to attack before retreating out of reach.
+
+Ranged rogues typically rely on sniping, which is also enabled by Cunning Action due to the ability to hide as a Bonus Action. Hiding after each attack using Cunning Action is reliable and effective, though it can be very static and repetitive. Rogue subclasses expand upon those tactical options, but in many cases these staple tactics remain crucial to the class’s function.
