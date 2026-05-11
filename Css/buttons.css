@@ -3,8 +3,8 @@
   box-sizing: border-box;
   border-radius: 999px; 
   background-color: #A62A1E;
-  border: 0.3em solid #D26E16;
-  outline-offset: 0.3em;
+  border: 0.3rem solid #D26E16;
+  outline-offset: 0.3rem;
   padding: 0px;
   padding-left: 12px;
   padding-right: 12px;
@@ -42,8 +42,8 @@ div:hover .info1{
   box-sizing: border-box;
   border-radius: 999px; 
   background-color: #A62A1E;
-  border: 0.3em solid #D26E16;
-  outline-offset: 0.3em;
+  border: 0.3rem solid #D26E16;
+  outline-offset: 0.3rem;
   width: 30%;
   padding: 0px;
   padding-left: 12px;
