@@ -35,3 +35,43 @@ div:hover .info1{
   background-color: rgba(200, 200, 200,0.8);
   scale: 1.2;
 }
+
+.rButton{
+    background-image: url("../Images/SVG/R_Botton_Flecha.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px; height:120px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.rButton:hover{
+    background-image: url("../Images/SVG/R_Botton_Flecha_Press.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    transform: scale(1.1);
+    
+}
+
+.lButton{
+    background-image: url("../Images/SVG/L_Botton_Flecha.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px; height:120px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.lButton:hover{
+    background-image: url("../Images/SVG/L_Botton_Flecha_Press.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    transform: scale(1.1);
+    
+}

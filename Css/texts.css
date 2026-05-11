@@ -1,36 +1,52 @@
-h1{
-				color: #D26E16;
-				font-weight: normal;
-				font-size: 64px;
-				font-family: "Inknut Antiqua", serif;
-				
-			}
-			h2{
-				color: #D26E16;
-				font-weight: bold;
-				font-size: 48px;
-				font-family: "Inknut Antiqua", serif;
-				
-				
-			}
-			h3{
-				color: #D26E16;
-				font-weight: bold;
-				font-size: 32px;
-				font-family: "Inknut Antiqua", serif;
-			}
-			h4{
-				color: #EDCBAF;
-				font-size: 20px;
-				font-family: "Inknut Antiqua", serif;
-			}
-			p{
-				color: #EDCBAF;
-				font-family: "JejuGothic";
-				font-size: 16px;
-			}
 
-			.section-title{
-				line-height: 1; 
-				margin: 20px;
-			}
+h1{
+		color: #D26E16;
+		font-weight: normal;
+		
+		font-family: "Inknut Antiqua", serif;
+		
+	}
+	h2{
+		color: #D26E16;
+		font-weight: bold;
+		
+		font-family: "Inknut Antiqua", serif;
+		
+		
+	}
+	h3{
+		color: #D26E16;
+		font-weight: bold;
+		
+		font-family: "Inknut Antiqua", serif;
+	}
+	h4{
+		color: #EDCBAF;
+		
+		font-family: "Inknut Antiqua", serif;
+	}
+	p{
+		color: #EDCBAF;
+		font-family: "JejuGothic";
+		
+	}
+
+	.section-title{
+		line-height: 1; 
+		margin: 20px;
+	}
+	@media only screen and (min-width: 769px) {
+		h1{font-size: 64px;}
+		h2{font-size: 48px;}
+		h3{font-size: 32px;}
+		h4{font-size: 26px;}
+		p{font-size: 20px;}
+	}
+
+@media only screen and (max-width: 768px ) {
+		h1{font-size: 48px;}
+		h2{font-size: 32px;}
+		h3{font-size: 28px;}
+		h4{font-size: 22px;}
+		p{font-size: 16px;}
+}
