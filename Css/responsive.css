@@ -14,18 +14,6 @@ main {
     width: 100%;
 }
 
-@media only screen and (max-width: 1140px ) {
-    a{font-size: 15px;}
-    .cajaImagen{display: none; width: 0;}
-    #contact{width: 100%; padding-left: 10%;}
-        .caja1{ width: 30%;height: 100px;}
-        .caja2{ width: 60%;height: 100px;}
-        .cajaDado{width: 15%;height: 100px; }
-    #imgMostruo{width: 67%; height: 100%;}
-    #textMostruo{width: 33%; height: 100%;}
-    #Mostruo{width: 100%; height: 500px;}
-}
-
 @media only screen and (min-width: 769px) {
     /* For Computer: */
     .cajaTexto {
@@ -40,11 +28,37 @@ main {
         .cajaDado{width: 15%;height: 100px; }
     
     } 
+    #imgMostruo{width: 50%; height: 100%;}
+    #textMostruo{width: 50%; height: 100%;}
+    #Mostruo{width: 100%; height: 500px;}
+
+    #info1{top: 15%; left: 14%;}
+    #info2{top: 60%; left: 27%;}
+    #info3{top: 75%; left: 30%;}
+    #info4{top: 35%; left: 40%;}
+        
+}
+
+@media only screen and (max-width: 1140px ) {
+    a{font-size: 15px;}
+    .cajaImagen{display: none; width: 0;}
+    #contact{width: 100%; padding-left: 10%;}
+        .caja1{ width: 30%;height: 100px;}
+        .caja2{ width: 60%;height: 100px;}
+        .cajaDado{width: 15%;height: 100px; }
     #imgMostruo{width: 67%; height: 100%;}
     #textMostruo{width: 33%; height: 100%;}
     #Mostruo{width: 100%; height: 500px;}
-        
+
+    #info1{top: 15%; left: 15%;}
+    #info2{top: 60%; left: 35%;}
+    #info3{top: 75%; left: 40%;}
+    #info4{top: 35%; left: 50%;}
+
+
 }
+
+
 
 @media only screen and (max-width: 768px )and (min-width: 375px )  {
     /* For Tablet: */
@@ -57,8 +71,18 @@ main {
      #imgMostruo{width: 100%; height: 70%;}
     #textMostruo{width: 100%; height: 30%;}
     #Mostruo{width: 100%; height: 800px;}
-}
 
+    #info1{top: 8%; left: 23%;}
+    #info2{top: 37%; left: 50%;}
+    #info3{top: 45%; left: 60%;}
+    #info4{top: 25%; left: 70%;}
+}
+@media only screen and (max-width: 500px )and (min-width: 375px )  {
+    #info1{top: 8%; left: 23%;}
+    #info2{top: 25%; left: 50%;}
+    #info3{top: 35%; left: 60%;}
+    #info4{top: 15%; left: 70%;}
+}
 @media only screen and (max-width: 375px) {
     /* For Mobile phones: */
    .cajaTexto {
@@ -72,7 +96,12 @@ main {
     .caja1{ display: none;}
     .caja2{ width: 30%;height: 100px;}
     .cajaDado{width: 30%;height: 100px; }
-    #imgMostruo{width: 100%; height: 50%;}
-    #textMostruo{width: 100%; height: 30%;}
+    #imgMostruo{width: 100%; height: 40%;}
+    #textMostruo{width: 100%; height: 40%;}
     #Mostruo{width: 100%; height: 800px;}
+
+    #info1{top: 5%; left: 23%;}
+    #info2{top: 15%; left: 50%;}
+    #info3{top: 25%; left: 60%;}
+    #info4{top: 10%; left: 80%;}
 }

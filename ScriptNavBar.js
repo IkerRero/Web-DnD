@@ -1,5 +1,7 @@
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
+const infoSecr = document.getElementById("info4");
+const zonaEspecifica = document.getElementById("Monstruos");
 let lastScrollY = window.scrollY;
 
 menuBtn.addEventListener("click", () => {
@@ -25,6 +27,23 @@ function TirarDado() {
     display.classList.remove("irse-arriba");
     void display.offsetWidth; // Reiniciar animación
     display.classList.add("mostrar");
+
+    // 2. DETECTAR POSICIÓN
+    const posicion = zonaEspecifica.getBoundingClientRect();
+    
+    // ¿Qué significa "estar en la zona"? 
+    // Que el tope del elemento esté por debajo del inicio de pantalla 
+    // y por encima del final (que sea visible).
+  const centroElemento = posicion.top + (posicion.height / 2);
+const centroPantalla = window.innerHeight / 2;
+
+// Si el centro del elemento está a menos de 200px del centro de la pantalla
+const estaEnElCentro = Math.abs(centroElemento - centroPantalla) < 200;
+
+    if (randomNumber >= 15 && estaEnElCentro && infoSecr.classList.contains("hide")) 
+    {
+        infoSecr.classList.remove("hide");
+    }
 }
 
 // --- ÚNICO EVENTO DE SCROLL (Para Header y Dado) ---
