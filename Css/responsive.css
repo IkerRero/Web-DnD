@@ -96,9 +96,10 @@ main {
     .caja1{ display: none;}
     .caja2{ width: 30%;height: 100px;}
     .cajaDado{width: 30%;height: 100px; }
-    #imgMostruo{width: 100%; height: 40%;}
-    #textMostruo{width: 100%; height: 40%;}
+    #imgMostruo{width: 100%; height: 35%;}
+    #textMostruo{width: 100%; height: 55%;}
     #Mostruo{width: 100%; height: 800px;}
+    #info-movil-container{width: 100%; height: 10%;}
 
     #info1{top: 5%; left: 23%;}
     #info2{top: 15%; left: 50%;}

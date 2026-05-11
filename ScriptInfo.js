@@ -1,22 +1,28 @@
-  // Seleccionamos todos los puntos
-        const puntos = document.querySelectorAll('.punto-info');
+const puntos = document.querySelectorAll('.punto-info');
+const cajaMovil = document.getElementById('texto-dinamico-movil');
 
-        puntos.forEach(punto => {
-            punto.addEventListener('click', (e) => {
-                // Evitamos que el click se propague si hay otros elementos
-                e.stopPropagation();
-                
-                // Cerramos otros puntos abiertos (opcional)
-                puntos.forEach(p => {
-                    if (p !== punto) p.classList.remove('activo');
-                });
+puntos.forEach(punto => {
+    punto.addEventListener('click', (e) => {
+        e.stopPropagation();
 
-                // Alternamos el estado del punto actual
-                punto.classList.toggle('activo');
-            });
-        });
+        // 1. Gestionar clases activo
+        puntos.forEach(p => p.classList.remove('activo'));
+        punto.classList.add('activo');
 
-        // Cerrar tooltips al hacer click fuera
-        document.addEventListener('click', () => {
-            puntos.forEach(p => p.classList.remove('activo'));
-        });
+        // 2. EXTRAER el texto del tooltip interno de este punto
+        const textoTooltip = punto.querySelector('.tooltip').innerText;
+
+        // 3. INYECTAR el texto en la caja de abajo (solo se verá si el CSS lo permite)
+        if (cajaMovil) {
+            cajaMovil.innerText = textoTooltip;
+        }
+    });
+});
+
+// Resetear al hacer click fuera
+document.addEventListener('click', () => {
+    puntos.forEach(p => p.classList.remove('activo'));
+    if (cajaMovil) {
+        cajaMovil.innerText = "Toca un punto (+) para ver los detalles.";
+    }
+});

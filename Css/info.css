@@ -1,7 +1,7 @@
-        
-        .contenedor-principal {
+  
+          .contenedor-principal {
             max-width: 900px;
-            background: white;
+            background: #D26E16;
             padding: 20px;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -30,7 +30,7 @@
             width: 24px;
             height: 24px;
             background-color: rgba(0, 0, 0, 0.7);
-            border: 2px solid white;
+            border: 2px solid  #D26E16;
             border-radius: 50%;
             cursor: pointer;
             z-index: 10;
@@ -38,15 +38,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: #EDCBAF;
             font-size: 12px;
             font-weight: bold;
         }
 
         .punto-info:hover {
             transform: scale(1.3);
-            background-color: #ff4757;
+            background-color: #A62A1E;;
         }
+
+  @media only screen and (min-width: 375px) {     
 
         /* Cuadro de texto (Tooltip) */
         .tooltip {
@@ -54,8 +56,8 @@
             bottom: 140%; /* Aparece arriba del punto */
             left: 50%;
             transform: translateX(-50%) translateY(10px);
-            background: #2f3542;
-            color: white;
+            background: #0E262A;
+            color: #EDCBAF;
             padding: 10px 15px;
             border-radius: 6px;
             width: 200px;
@@ -78,7 +80,7 @@
             margin-left: -5px;
             border-width: 5px;
             border-style: solid;
-            border-color: #2f3542 transparent transparent transparent;
+            border-color: #0E262A transparent transparent transparent;
         }
 
         /* Clase para mostrar el tooltip vía JS */
@@ -103,3 +105,40 @@
             display: none;
 
         }
+        .solo-movil-info {
+            display: none;
+        }
+    }
+
+     @media only screen and (max-width: 375px) {     
+
+            /* Mostramos la caja de abajo */
+        .solo-movil-info {
+            display: flex;
+            background: #0E262A;
+            color: #EDCBAF;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 8px;
+            border-left: 4px solid #D26E16;
+            font-size: 16px;
+        }
+
+        /* OCULTAMOS los tooltips flotantes originales para que no se solapen */
+        .punto-info .tooltip {
+            display: none !important;
+        }
+
+        /* Estilo opcional para resaltar el punto clicado en móvil */
+        .punto-info.activo {
+            background-color: #A62A1E;
+            transform: scale(1.2);
+        }
+        .hide{
+            display: none;
+
+        }
+    }
+
+       
