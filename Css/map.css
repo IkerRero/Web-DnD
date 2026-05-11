@@ -7,7 +7,7 @@ margin: 30px;
 
 }
 .map{
-    
+    touch-action: none;
     height: 700px;
     overscroll-behavior: contain;
 }
