@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="Css/navbar.css">
 		<link rel="stylesheet" href="Css/responsive.css">
 		<link rel="stylesheet" href="Css/info.css">
+		<link rel="stylesheet" href="Css/map.css">
 		<style>
 
 			.center{
@@ -113,16 +114,22 @@
         Classes
     </h1>
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-    <h1 id="Ambientacion">
-        Ambientacion
-    </h1>
+    <div class="world">
+		<h1 id="Ambientacion" class="section-title">
+        World
+		</h1>
+			<div class="map">
+				<iframe id="mapaInteractivo" title="Mapa Interactivo" width="100%" src="https://www.aidedd.org/atlas/sword-coast"></iframe>
+			</div>		
+	</div>
+    
         <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
     <h1 id="Razas">
         Races
     </h1>
         <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
    
-		<h1 id="Monstruos">
+		<h1 id="Monstruos" class="section-title">
         Monsters
 		<div class="caja"id="Mostruo">
 			<div class="caja" id="imgMostruo" style=" float: left; padding-left: 5%;">
@@ -164,8 +171,7 @@
 
 		</div>
     </h1>
-	<script src="ScriptInfo.js" ></script>
-   <script src="ScriptNavBar.js"> </script>
+	
 </main>		
 </div>
 
@@ -210,6 +216,8 @@
 			</div>
 			
 		</footer>
-		<script src="ScriptNavBar.js"></script>
+		<script src="ScriptInfo.js" ></script>
+   		<script src="ScriptNavBar.js"> </script>
+		<script src="ScriptMap.js"> </script>
 	</body>
 </html>
