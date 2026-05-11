@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="Css/responsive.css">
 		<link rel="stylesheet" href="Css/info.css">
 		<link rel="stylesheet" href="Css/map.css">
+		<link rel="stylesheet" href="Css/carousel.css">
+
 		<link rel="stylesheet" href="Css/classes.css">
 		<style>
 
@@ -167,12 +169,69 @@
 				<iframe id="mapaInteractivo" title="Mapa Interactivo" width="100%" src="https://www.aidedd.org/atlas/sword-coast"></iframe>
 			</div>		
 	</div>
-    
-        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-    <h1 id="Razas">
-        Races
-    </h1>
-        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <h1 id="Razas" class="section-title">Races</h1>
+<div class="caja-principal caja" id="mainCarousel">
+    <div class="area-carrusel">
+        <div class="contenedor-slides" id="track">
+           <!-- Tieflings -->
+				<div class="slide active" data-name="Tieflings">
+					<img src="./Images/Razas/Tieflings.jpg" alt="Tiefling">
+					<div class="info-overlay">
+						<h3>Tieflings</h3>
+						<p>Ser tocado por un linaje infernal marca a los tieflings con cuernos, colas y colores de piel inusuales. Son supervivientes natos, a menudo mirados con desconfianza pero poseedores de una voluntad inquebrantable y talentos mágicos latentes.</p>
+					</div>
+				</div>
+			<!-- Elfos -->
+				<div class="slide" data-name="Elfos">
+					<img src="./Images/Razas/Elfos.jpg" alt="Elfo">
+					<div class="info-overlay">
+						<h3>Elfos</h3>
+						<p>Los elfos son un pueblo mágico de gracilidad sobrenatural, que viven en lugares de etérea belleza. Aman la naturaleza, la magia, el arte y la música. Su longevidad les permite ver el mundo con una perspectiva que pocas razas alcanzan.</p>
+					</div>
+				</div>
+			 <!-- Orcos -->
+            <div class="slide" data-name="Orcos">
+                <img src="./Images/Razas/Orcos.jpg" alt="Orco">
+                <div class="info-overlay">
+                    <h3>Orcos</h3>
+                    <p>Poseedores de una fuerza física inmensa y una resistencia legendaria. Aunque a menudo se les etiqueta como salvajes, los orcos valoran el honor en el combate y la lealtad a la tribu por encima de todo.</p>
+                </div>
+            </div>
+			  <!-- Humanos -->
+            <div class="slide" data-name="Humanos">
+                <img src="./Images/Razas/Humanos.jpg" alt="Humano">
+                <div class="info-overlay">
+                    <h3>Humanos</h3>
+                    <p>La raza más versátil y ambiciosa. Los humanos son innovadores y adaptables, capaces de alcanzar la maestría en cualquier disciplina que se propongan, desde la magia más compleja hasta el arte de la guerra.</p>
+                </div>
+            </div>
+			    <!-- Enanos -->
+            <div class="slide" data-name="Enanos">
+                <img src="./Images/Razas/Enanos.jpg" alt="Enano">
+                <div class="info-overlay">
+                    <h3>Enanos</h3>
+                    <p>Maestros de la piedra y el metal. Los enanos son conocidos por su robustez, su amor por las minas profundas y su inquebrantable sentido del deber y la tradición. Un enano nunca olvida una deuda... ni un agravio.</p>
+                </div>
+            </div>
+
+				
+        </div>
+    </div>
+
+    <div class="area-controles">
+        <div class="btn-contenedor">
+            <button class="lButton" id="prevBtn"></button>
+        </div>
+        <div class="titulo-raza">
+            <h2 id="currentRaceName">Tieflings</h2>
+        </div>
+        <div class="btn-contenedor">
+            <button class="rButton" id="nextBtn"></button>
+        </div>
+    </div>
+</div>
+  
+    <div class="scroll-hint">Scroll > 30px para auto-play</div>
    
 		<h1 id="Monstruos" class="section-title">
         Monsters
@@ -200,14 +259,14 @@
             </div>
 			<div class="punto-info hide" id="info4"  >
                 +
-                <div class="tooltip">Secreto: Le gusta comer zanahorias bañadas en miel.</div>
+                <div class="tooltip">Secreto: Si mira demasiado a un espejo, se crea otro Beholder.</div>
             </div>
 			<div id="info-movil-container" class="solo-movil-info caja">
  			   <p id="texto-dinamico-movil">Toca un punto (+) para ver los detalles.</p>
 			</div>
-			<div class="caja" id="textMostruo"style="float: right; padding: 10px;">
+			<div class="caja" id="textMostruo"style="float: right; padding: 10px; ">
 				<h3>Beholder</h3>
-				<p>
+				<p style=" padding-top: 20px">
 				El contemplador es una de las criaturas más temidas en el mundo de la fantasía. 
                 Es una esfera flotante de carne con una boca llena de colmillos y un gran ojo central, 
                 coronada por diez tallos oculares, cada uno con un poder mágico distinto. 
@@ -267,6 +326,7 @@
 		<script src="ScriptInfo.js" ></script>
    		<script src="ScriptNavBar.js"> </script>
 		<script src="ScriptMap.js"> </script>
+		<script src="ScriptCarousel.js"> </script>
 		<script src="ScriptClases.js"> </script>
 	</body>
 </html>

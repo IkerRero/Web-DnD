@@ -1,0 +1,130 @@
+
+
+        /* Contenedor Principal */
+        .caja-principal {
+            width: 100%;
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* Área del Carrusel (75%) */
+      .area-carrusel {
+    width: 100%;
+    height: 75%;
+    position: relative;
+    overflow: hidden; /* Oculta los slides que están fuera de la ventana */
+}
+
+        .slide {
+            /* IMPORTANTE: ya no usamos position absolute ni opacity */
+            flex: 0 0 20%; /* Cada slide ocupa el 20% del total (1/5 partes) */
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .slide.active {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .slide img {
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        /* Panel de Información (Overlay) */
+        .info-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            box-sizing: border-box;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .slide.show-info .info-overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .info-overlay p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            color: #ecf0f1;
+        }
+
+        /* Área de Controles (25%) */
+        .area-controles {
+            width: 100%;
+            height: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .btn-contenedor {
+            width: 120px;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .titulo-raza {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .titulo-raza h2 {
+            font-size: 2.5em;
+            color: var(--color-texto);
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Indicador de scroll */
+        .scroll-hint {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.8em;
+            color: rgba(255,255,255,0.3);
+        }
+
+  
+
+        /* El track es la "tira" larga que contiene los slides */
+        .contenedor-slides {
+            display: flex; /* Pone los slides en fila */
+            width: 500%; /* 5 slides * 100% cada uno */
+            height: 100%;
+            transition: transform 0.6s cubic-bezier(0.45, 0, 0.55, 1); /* Suavidad del deslizamiento */
+        }
+
+
+
