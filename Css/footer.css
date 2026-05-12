@@ -28,7 +28,14 @@
                 gap: 16px;
             }
 
-            
+            .heading{
+                
+		color: #D26E16;
+		font-weight: normal;
+		
+		font-family: "Inknut Antiqua", serif;
+
+            }
 
             .footer-top > div > div{
                 display: flex;
