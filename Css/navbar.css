@@ -108,9 +108,12 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
-
 .header-hidden {
     transform: translateY(-100%);
+}
+
+.main-container {
+    padding-top: 80px;
 }
 
 

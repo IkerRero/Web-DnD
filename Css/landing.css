@@ -1,0 +1,24 @@
+.landing {
+    background-image: url('/Images/Landing.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+}
+
+.welcome-text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    margin: 0 auto; 
+}
+
+
+.game-description {
+    width: 50%;
+}
