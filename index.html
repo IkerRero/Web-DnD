@@ -49,8 +49,8 @@
 				<nav>
 					<div class="nav-container">
 						<div class="cajaDado">
-							<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="100" height="100" fill="url(#pattern0_2019_260)"/>
+							<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<rect onClick="TirarDado()" style="cursor: pointer;" width="100" height="100" fill="url(#pattern0_2019_260)"/>
 <defs>
 <pattern id="pattern0_2019_260" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_2019_260" transform="translate(0 -0.0020377) scale(0.000509424)"/>
@@ -116,7 +116,7 @@
 				<div class="welcome-text">
 					<h1 class="section-title main-title" style="margin: 0;">PLAY</h1>
 					<h1 class="section-title main-title" style="margin: 0;">DND!</h1>
-					<p class="game-description" style="margin-top: 20px;">D&D es básicamente un juego de imaginación, como cuando eras pequeño y fingías ser "policías y ladrones" o "dinosaurios" o cualquier otra cosa a la que jugaras.</p>
+					<p class="game-description" style="margin-top: 20px;">D&D is essentially a game of imagination, like when you were young and pretended to be "cops and robbers" or "dinosaurs" or whatever else you would play. But the rules of the game provide structure so that the players can't say</p>
 				</div>
 			</div>
     <div class="classes">
@@ -182,40 +182,44 @@
 				<div class="slide active" data-name="Tieflings">
 					<img src="./Images/Razas/Tieflings.jpg" alt="Tiefling">
 					<div class="info-overlay">
-						<h3>Tieflings</h3>
-						<p>Ser tocado por un linaje infernal marca a los tieflings con cuernos, colas y colores de piel inusuales. Son supervivientes natos, a menudo mirados con desconfianza pero poseedores de una voluntad inquebrantable y talentos mágicos latentes.</p>
+						<h3 style="color: #D26E16;">Tieflings</h3>
+						<p>Being touched by a hellish bloodline marks tieflings with horns, tails, and unusual skin colors. They are natural survivors, often viewed with suspicion but possessing an unbreakable will and latent magical talents.</p>
 					</div>
 				</div>
 			<!-- Elfos -->
-				<div class="slide" data-name="Elfos">
+				<div class="slide" data-name="Elves">
 					<img src="./Images/Razas/Elfos.jpg" alt="Elfo">
 					<div class="info-overlay">
-						<h3>Elfos</h3>
-						<p>Los elfos son un pueblo mágico de gracilidad sobrenatural, que viven en lugares de etérea belleza. Aman la naturaleza, la magia, el arte y la música. Su longevidad les permite ver el mundo con una perspectiva que pocas razas alcanzan.</p>
+						<h3>Elves</h3>
+						<p>
+Elves are a magical people of supernatural grace, who live in places of ethereal beauty. They love nature, magic, art, and music. Their longevity allows them to see the world with a perspective few other races attain.</p>
 					</div>
 				</div>
 			 <!-- Orcos -->
-            <div class="slide" data-name="Orcos">
+            <div class="slide" data-name="Orcs">
                 <img src="./Images/Razas/Orcos.jpg" alt="Orco">
                 <div class="info-overlay">
-                    <h3>Orcos</h3>
-                    <p>Poseedores de una fuerza física inmensa y una resistencia legendaria. Aunque a menudo se les etiqueta como salvajes, los orcos valoran el honor en el combate y la lealtad a la tribu por encima de todo.</p>
+                    <h3>Orcs</h3>
+                    <p>
+Possessing immense physical strength and legendary endurance, orcs, though often labeled as savages, value honor in combat and loyalty to their tribe above all else.</p>
                 </div>
             </div>
 			  <!-- Humanos -->
-            <div class="slide" data-name="Humanos">
+            <div class="slide" data-name="Humans">
                 <img src="./Images/Razas/Humanos.jpg" alt="Humano">
                 <div class="info-overlay">
-                    <h3>Humanos</h3>
-                    <p>La raza más versátil y ambiciosa. Los humanos son innovadores y adaptables, capaces de alcanzar la maestría en cualquier disciplina que se propongan, desde la magia más compleja hasta el arte de la guerra.</p>
+                    <h3>Humans</h3>
+                    <p>
+The most versatile and ambitious race. Humans are innovative and adaptable, capable of achieving mastery in any discipline they choose, from the most complex magic to the art of war.</p>
                 </div>
             </div>
 			    <!-- Enanos -->
-            <div class="slide" data-name="Enanos">
+            <div class="slide" data-name="Dwarves">
                 <img src="./Images/Razas/Enanos.jpg" alt="Enano">
                 <div class="info-overlay">
-                    <h3>Enanos</h3>
-                    <p>Maestros de la piedra y el metal. Los enanos son conocidos por su robustez, su amor por las minas profundas y su inquebrantable sentido del deber y la tradición. Un enano nunca olvida una deuda... ni un agravio.</p>
+                    <h3>Dwarves</h3>
+                    <p>
+Masters of stone and metal. Dwarves are known for their hardiness, their love of deep mines, and their unwavering sense of duty and tradition. A dwarf never forgets a debt... or a wrong.</p>
                 </div>
             </div>
 
@@ -250,34 +254,36 @@
 			  <!-- Puntos posicionados con porcentajes para que sean responsivos -->
             <div class="punto-info" id="info1" >
                 +
-                <div class="tooltip">Tentáculo superior: Capaz de lanzar rayos mágicos paralizantes.</div>
+                <div class="tooltip">
+Upper tentacle: Capable of launching paralyzing magic rays</div>
             </div>
 
             <div class="punto-info" id="info2" >
                 +
-                <div class="tooltip">Ojo Central: Emite un cono de antimagia que anula hechizos.</div>
+                <div class="tooltip">Central Eye: Emits an anti-magic cone that nullifies spells.</div>
             </div>
 
             <div class="punto-info" id="info3" >
                 +
-                <div class="tooltip">Mandíbula: Sus dientes pueden triturar armaduras de placas.</div>
+                <div class="tooltip">Jaw: Its teeth can crush plate armor.</div>
             </div>
 			<div class="punto-info hide" id="info4"  >
                 +
-                <div class="tooltip">Secreto: Si mira demasiado a un espejo, se crea otro Beholder.</div>
+                <div class="tooltip">Secret: If it look at a mirror too much, it creates another Beholder.</div>
             </div>
 			<div id="info-movil-container" class="solo-movil-info caja">
  			   <p id="texto-dinamico-movil">Toca un punto (+) para ver los detalles.</p>
 			</div>
-			<div class="caja" id="textMostruo"style="float: right; padding: 10px; ">
+			<div class="caja" id="textMostruo"style="float: right; padding: 10px; overflow: auto; ">
 				<h3>Beholder</h3>
-				<p style=" padding-top: 20px">
-				El contemplador es una de las criaturas más temidas en el mundo de la fantasía. 
-                Es una esfera flotante de carne con una boca llena de colmillos y un gran ojo central, 
-                coronada por diez tallos oculares, cada uno con un poder mágico distinto. 
+				<p style=" padding-top: 20px; white-space:pre-line ;">
+				One glance at a beholder is enough to assess its foul and otherworldly nature. Aggressive, hateful, and greedy, these aberrations dismiss all other creatures as lesser beings, toying with them or destroying them as they choose.
+
+A beholder's spheroid body levitates at all times, and its great bulging eye sits above a wide, toothy maw, while the smaller eyestalks that crown its body twist and turn to keep its foes in sight. When a beholder sleeps, it closes its central eye but leaves its smaller eyes open and alert.
+
+The disdain a beholder has for other creatures extends to other beholders. Each beholder believes its form to be an ideal, and that any deviation from that form is a flaw in the racial purity of its kind. Beholders vary greatly in their physical forms, making conflict between them inevitable. Some beholders are protected by overlapping chitinous plates. Some have smooth hides. Some have eyestalks that writhe like tentacles, while others' stalks bear crustacean-like joints. Even slight differences of coloration in hide can turn two beholders into lifelong enemies.
 				</p> 
-				
-				<p><i>Pasa el mouse sobre los puntos (+) para ver detalles.</i></p>
+				<p><i>Hover the mouse or click over the (+) points to see details.</i></p>
 
 			</div>
 
