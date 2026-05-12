@@ -1,6 +1,6 @@
         function toggleAutor(integrantes) {
             const img = integrantes.querySelector('img');
-            const titulo = integrantes.querySelector('h3');
+            const titulo = integrantes.querySelector('h2');
             const parrafo = integrantes.querySelector('p');
 
             // Comprobar si estamos en el estado 1

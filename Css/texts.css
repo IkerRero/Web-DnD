@@ -44,6 +44,7 @@ h1{
 		h3{font-size: 32px;}
 		h4{font-size: 26px;}
 		p{font-size: 20px;}
+		.developer-name{font-size: 32px;}
 	}
 
 @media only screen and (max-width: 768px ) {
@@ -52,4 +53,5 @@ h1{
 		h3{font-size: 28px;}
 		h4{font-size: 22px;}
 		p{font-size: 16px;}
-}
+		.developer-name{font-size: 28px;}
+	}
