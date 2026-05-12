@@ -26,7 +26,15 @@
 
 }
 
+.button-container{
+  display: flex;
+  align-items: flex-start;
+}
 
+#readMore{
+    display: none;
+    width: 50%;
+}
 .class-row{
     display: flex;
     justify-content: space-around;
@@ -82,5 +90,24 @@
 .class-info{
     width: 100%;
 }
+
+#classText {
+    white-space: pre-line;
+    max-height: 100px;
+    overflow: hidden;
+    box-shadow: 0 14px 18px -8px  #0E262A;
+}
+
+#classText.expanded {
+    overflow: auto;
+    max-height: 100%;
+    box-shadow: none;
+}
+
+    #readMore {
+        display: block;
+        margin: 20px auto;
+        width: fit-content;
+    }
 
 }

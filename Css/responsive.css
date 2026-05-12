@@ -75,7 +75,7 @@ main {
     .caja2{ width: 60%;height: 100px;}
     .cajaDado{width: 30%;height: 100px; }
      .titulo-raza{font-size: 16px;}
-     #imgMostruo{width: 100%; height: 70%;}
+     #imgMostruo{width: 100%; height: auto;}
     #textMostruo{width: 100%; height: 30%;}
     #Mostruo{width: 100%; height: 800px;}
 
@@ -108,6 +108,7 @@ main {
         justify-content: space-between;
     }
     .caja1{ display: none;}
+    #returnHome{display: flex;}
     .caja2{ width: 30%;height: 100px;}
     .cajaDado{width: 30%;height: 100px; }
     .titulo-raza{font-size: 7px;}

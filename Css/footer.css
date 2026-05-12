@@ -85,8 +85,8 @@
                 color: #EDCBAF;
                 text-decoration: underline;
                 font-size: large;
-                /*text-shadow: 1px 0 #A62A1E, -1px 0 #A62A1E, 0 1px #A62A1E, 0 -1px #A62A1E,
-                1px 1px #A62A1E, -1px -1px #A62A1E, 1px -1px #A62A1E, -1px 1px #A62A1E;*/
+                text-shadow: 1px 0 #A62A1E, -1px 0 #A62A1E, 0 1px #A62A1E, 0 -1px #A62A1E,
+                1px 1px #A62A1E, -1px -1px #A62A1E, 1px -1px #A62A1E, -1px 1px #A62A1E;
              }
 
             @media (max-width: 600px) {

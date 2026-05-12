@@ -30,6 +30,16 @@
   white-space: nowrap;
 }
 
+
+.button-readMore{
+  text-decoration: underline;
+  color: #D26E16;
+  font-family: "Inknut Antiqua", serif;
+  background: none;
+  border: none;
+  margin: 0px;
+}
+
 .button-footer{
 
   box-sizing: border-box;
